@@ -98,7 +98,6 @@ function runEvent(e) {
 
   console.log(box.style.backgroundColor);
 }
-    
 
 // KEYDOWN  when the key is pressed
 // e.target.value  -> to live typing
@@ -109,3 +108,16 @@ function runEvent(e) {
 //  focus, blur
 // cut paste
 // input
+
+// NEW TOPIC
+// SELECT AND OPTION TAG
+
+const select = document.querySelector("select.form-control");
+console.log(select)
+select.addEventListener("change", runSelectEvent);
+function runSelectEvent(e) {
+  console.log(`${e.type}`);
+  console.log(`${e.target.value}`);
+
+}
+               
